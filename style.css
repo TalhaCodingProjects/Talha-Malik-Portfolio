@@ -145,7 +145,7 @@ nav {
     border-radius: 10px;
     box-shadow: -1px -3px 20px 6px #007eff;
     border: 2px solid lawngreen;
-    animation: imageComing .9s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+    animation: imageComing .7s cubic-bezier(0.23, 1, 0.320, 1) .7s ;
     transition-property: width;
     transition-duration: .1s;
     transition-timing-function: ease-in-out;
@@ -164,10 +164,20 @@ nav {
         width: 0%;
         box-shadow: 0 0 0 0 black;
     }
+    30%{
+        opacity: 0.30;
+        margin-right: 2.3;
+        width: 30%;
+    }
     50%{
-        opacity: 0.50;
-        margin-right: 2;
+        opacity: 0.30;
+        margin-right: 2.7;
         width: 50%;
+    }
+    70%{
+        opacity: 0.80;
+        margin-right: 1.5;
+        width: 70%;
     }
     100%{
         opacity: 1;
