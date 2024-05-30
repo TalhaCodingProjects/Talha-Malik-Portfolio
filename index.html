@@ -1,67 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/TalhaCodingProjects/Talha-Malik-Portfolio/7ba8e1e7d93e8ce0c31a184595abdfcf305d129a/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/Talha-Malik-Portfolio/favicon.svg" type="image/x-icon">
 </head>
 
-    <header>
-        <nav>
-            <div class="logo">Talha Malik</div>
-            <div class="hamburger-menu" id="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+<header>
+    <nav>
+        <div class="logo">Talha Malik</div>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero" class="hero-section">
+    <div class="hero-content">
+        <div class="container">
+            <h1 contenteditable>I am Talha Malik</h1>
+            <p>I am a highly skilled and professional Frontend Web Developer with expertise in creating dynamic and
+                responsive websites using HTML, CSS, and JavaScript. With three years of extensive experience in Graphic
+                Designing, I possess a keen eye for aesthetics and user-friendly design. Additionally, I have
+                substantial experience in developing websites using WordPress, allowing me to deliver customized and
+                scalable web solutions</p>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="https://raw.githubusercontent.com/TalhaCodingProjects/Personal-Portfolio-Page/main/Screenshot%202024-05-29%20131919.png"
+            alt="Hero Image">
+    </div>
+</section>
+
+<section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>Hello, friends. I am a dedicated Web Developer with expertise in both coding and WordPress. Over the past three
+        years, I have honed my skills in Graphic Design, creating logos, banners, and a wide range of other visual
+        elements. My commitment is to provide an exceptional experience, combining creativity with technical proficiency
+        to bring your vision to life. I pride myself on delivering professional, high-quality results that exceed
+        expectations. Whether you need a custom website or striking graphic designs, I am here to help. Let’s
+        collaborate to create something truly remarkable.
+    </p>
+</section>
+
+
+<div class="project-heading">
+    <h2>Projects</h2>
+</div>
+<section id="projects" class="projects-section">
+    <div class="project-card">
+        <div class="project-card-img">
+
+        </div>
+        <h3></h3>
+        <p>Description of Project 1.</p>
+    </div>
+    <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Description of Project 2.</p>
+    </div>
+    <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Description of Project 1.</p>
+    </div>
+    <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Description of Project 2.</p>
+    </div>
+    <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Description of Project 1.</p>
+    </div>
+    <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Description of Project 2.</p>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+     <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" value="+92 313 5291256" readonly>
             </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <div class="container">
-                <h1 contenteditable>I am Talha Malik</h1>
-                <p>I am a highly skilled and professional Frontend Web Developer with expertise in creating dynamic and responsive websites using HTML, CSS, and JavaScript. With three years of extensive experience in Graphic Designing, I possess a keen eye for aesthetics and user-friendly design. Additionally, I have substantial experience in developing websites using WordPress, allowing me to deliver customized and scalable web solutions</p>
-              </div>
-        </div>
-        <div class="hero-image">
-            <img src="https://raw.githubusercontent.com/TalhaCodingProjects/Personal-Portfolio-Page/main/Screenshot%202024-05-29%20131919.png" alt="Hero Image">
-        </div>
-    </section>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+</section>
 
-    <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself here.</p>
-    </section>
-
-    <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
-        </div>
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <p>Details about how to contact you.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 My Portfolio</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 My Portfolio</p>
+</footer>
 </body>
+
 </html>
