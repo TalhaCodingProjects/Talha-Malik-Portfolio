@@ -194,11 +194,36 @@ nav {
     text-align: center;
 }
 
+.projects-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-heading{
+    text-align: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
 .project-card {
     background: #f4f4f4;
     margin: 1rem 0;
     padding: 1rem;
+    width: 40%;
 }
+
+.about-section{
+    width: 95%;
+}
+
+.about-section p{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    top: 1rem;
+}
+
+
 
 footer {
     text-align: center;
@@ -211,7 +236,7 @@ footer {
     background-color: white;
     color: black;
 }
-
+/* 
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -244,9 +269,9 @@ footer {
 
    
 
-    
-}
-@media (max-width: 552px) {
+     */
+
+/* @media (max-width: 552px) {
     .hero-content {
         height: 40vh;
         width: 100%;
@@ -341,4 +366,58 @@ footer {
     }
 }
  
+ */
 
+ .contact-form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-left: 35%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button: hover {
+    background-color: #218838;
+}
+
+#responseMessage {
+    margin-top: 20px;
+    color: #28a745;
+}
