@@ -210,8 +210,35 @@ nav {
     background: #f4f4f4;
     margin: 1rem 0;
     padding: 1rem;
-    width: 40%;
 }
+
+.projectcards{
+    display: flex;
+}
+
+.project-card-1{
+    width: 60%;
+}
+
+.project-card-1 img {
+    width: 260px;
+}
+
+
+.project-card-2{
+    width: 38.5vw;
+    height: 20vh;
+    display: flex;
+    margin-left: 12rem;
+}
+
+.project-card-2 img{
+    width: 160px;
+}
+
+/* .card-2-text{
+    padding-left: 2rem;
+} */
 
 .about-section{
     width: 95%;
@@ -236,8 +263,8 @@ footer {
     background-color: white;
     color: black;
 }
-/* 
-@media (max-width: 768px) {
+
+@media (max-width: 1200px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -266,10 +293,7 @@ footer {
         flex-direction: column;
         height: 90vh;
     }
-
-   
-
-     */
+}
 
 /* @media (max-width: 552px) {
     .hero-content {
@@ -368,6 +392,12 @@ footer {
  
  */
 
+
+ .contact-section{
+    display: flex;
+    justify-content: center;
+ }
+
  .contact-form-container {
     background: #fff;
     padding: 20px;
@@ -376,7 +406,9 @@ footer {
     width: 100%;
     max-width: 400px;
     text-align: center;
-    margin-left: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 h2 {
