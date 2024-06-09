@@ -233,8 +233,58 @@ a{
 .contact-section {
     padding: 2rem;
     text-align: center;
+    }
+    
+    .project-heading{
+        text-align: center;
+        width: 100%;
+        margin-top: 3rem;
+    }
+    /* .projects-section{
+    border-radius: 7px;
+    animation: comingSection .9s .9s cubic-bezier(0.215, 0.610, 0.355, 1) ;
+    height: 70vh;
 }
 
+@keyframes comingSection {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        color: aliceblue;
+    }
+}
+
+
+.project-cards{
+    display: flex;
+    gap: 2rem;
+}
+
+.card{
+    background: linear-gradient(blue, orange, White);
+    border: 2px solid lightcyan;
+    border-radius: 2vw;
+}
+
+.card-size{
+    width: 29vw;
+    height: 60vh;
+}
+
+.project-cards img{
+    width: 320px;
+} */
+
+
+
+/* .card-2-text{
+    padding-left: 2rem;
+} */
 
 .about-section{
     width: 95%;
