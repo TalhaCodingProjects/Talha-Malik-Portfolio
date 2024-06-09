@@ -15,6 +15,38 @@ body {
     transition: background-color 0.10s, color 0.9s;
 }
 
+.page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Semi-transparent white background */
+    z-index: 9999;
+    /* Ensure it appears above other content */
+    display: none;
+    /* Initially hidden */
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner-grow {
+    gap: 3vw;
+}
+
+.btn {
+    width: 8vw;
+    font-size: 0.70vw;
+    position: relative;
+    right: 0.10vw;
+}
+
 
 header {
     background: #df3232;
@@ -53,7 +85,7 @@ nav {
     width: 60%;
     font-family: "Oswald", sans-serif;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .nav-links {
@@ -66,7 +98,7 @@ nav {
 .nav-links li {
     display: inline;
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .nav-links a {
@@ -95,9 +127,9 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 2rem;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -111,29 +143,30 @@ nav {
     text-align: center;
     letter-spacing: 1px;
     animation: textComing .8s ease-in;
-  }
-  
-  h1:hover {
-    font-variation-settings: "wght" 582; 
+}
+
+h1:hover {
+    font-variation-settings: "wght" 582;
     letter-spacing: 4px;
-  }
-  
-  p {
+}
+
+p {
     font-family: "Oswald", sans-serif;
     font-size: 1em;
     line-height: 150%;
     text-align: center;
     color: rgb(0, 0, 0);
     letter-spacing: .3px;
-  }
+}
 
 
 @keyframes textComing {
-    0%{
+    0% {
         opacity: 0;
         color: white;
     }
-    100%{
+
+    100% {
         opacity: 1;
         color: black;
     }
@@ -145,41 +178,45 @@ nav {
     border-radius: 10px;
     box-shadow: -1px -3px 20px 6px #007eff;
     border: 2px solid lawngreen;
-    animation: imageComing .7s cubic-bezier(0.23, 1, 0.320, 1) .7s ;
+    animation: imageComing .7s cubic-bezier(0.23, 1, 0.320, 1) .7s;
     transition-property: width;
     transition-duration: .1s;
     transition-timing-function: ease-in-out;
 }
 
 
-.hero-image img:hover{
+.hero-image img:hover {
     width: 104%;
 
 }
 
 @keyframes imageComing {
-    0%{
+    0% {
         opacity: 0;
         margin-right: 4rem;
         width: 0%;
         box-shadow: 0 0 0 0 black;
     }
-    30%{
+
+    30% {
         opacity: 0.30;
         margin-right: 2.3;
         width: 30%;
     }
-    50%{
+
+    50% {
         opacity: 0.30;
         margin-right: 2.7;
         width: 50%;
     }
-    70%{
+
+    70% {
         opacity: 0.80;
         margin-right: 1.5;
         width: 70%;
     }
-    100%{
+
+    100% {
         opacity: 1;
         margin-right: 0;
         width: 100%;
@@ -187,29 +224,29 @@ nav {
     }
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-.hero-button{
+.hero-button {
     margin-top: 2rem;
     transition-property: box-shadow;
     transition-duration: .6s;
     transition-timing-function: ease-in-out;
 }
 
-.hero-button:hover{
+.hero-button:hover {
     box-shadow: -3px -6px 17px 4px rgb(61, 55, 42);
 }
 
-.hero-button button{
+.hero-button button {
     padding: 8px;
     width: 17rem;
     height: 3rem;
 }
 
-.hero-button button a{
+.hero-button button a {
     position: relative;
     font-size: 1rem;
     transition-property: font-weight, font-size;
@@ -217,12 +254,12 @@ a{
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.hero-button button a:hover{
+.hero-button button a:hover {
     font-weight: 600;
     font-size: 1.2rem;
 }
 
-.hero-button svg{
+.hero-button svg {
     position: relative;
     left: 0.40rem;
     top: -0.18rem;
@@ -233,14 +270,34 @@ a{
 .contact-section {
     padding: 2rem;
     text-align: center;
-    }
-    
-    .project-heading{
-        text-align: center;
-        width: 100%;
-        margin-top: 3rem;
-    }
-    /* .projects-section{
+}
+
+
+.contact-section h2{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.about-section h2{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.project-heading h2{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.project-heading {
+    text-align: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+/* .projects-section{
     border-radius: 7px;
     animation: comingSection .9s .9s cubic-bezier(0.215, 0.610, 0.355, 1) ;
     height: 70vh;
@@ -286,46 +343,49 @@ a{
     padding-left: 2rem;
 } */
 
-.about-section{
+.about-section {
     width: 95%;
 }
 
-.about-section p{
+.about-section p {
     font-family: "Poppins", sans-serif;
     position: relative;
     top: 1rem;
 }
 
-.certificates-heading{
+.certificates-heading {
     display: flex;
     justify-content: center;
     /* margin-left: 50%; */
     margin-top: 3rem;
 }
 
-.certificate-section{
+.certificate-section {
     display: flex;
     justify-content: center;
     gap: 5rem;
 }
 
-.certi{
+.certi {
     margin-left: 5rem;
 }
 
-.certi-1{
+.certi-1 {
     position: relative;
     top: -11rem;
 }
-.certi-2{
+
+.certi-2 {
     position: relative;
     top: -13rem;
 }
-.certi-3{
+
+.certi-3 {
     position: relative;
     top: -5rem;
 }
-.certi-4{
+
+.certi-4 {
     position: relative;
     top: -5rem;
 }
@@ -473,12 +533,12 @@ footer {
  */
 
 
- .contact-section{
+.contact-section {
     display: flex;
     justify-content: center;
- }
+}
 
- .contact-form-container {
+.contact-form-container {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
