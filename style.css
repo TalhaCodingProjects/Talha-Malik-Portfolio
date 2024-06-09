@@ -211,7 +211,6 @@ a{
 
 .hero-button button a{
     position: relative;
-    top: -1rem;
     font-size: 1rem;
     transition-property: font-weight, font-size;
     transition-duration: .3s;
@@ -236,15 +235,18 @@ a{
     text-align: center;
 }
 
-.projects-section{
-    background-color: #f0f0f0;
+/* .projects-section{
     border-radius: 7px;
-    animation: comingSection .9s cubic-bezier(0.215, 0.610, 0.355, 1) ;
+    animation: comingSection .9s .9s cubic-bezier(0.215, 0.610, 0.355, 1) ;
+    height: 70vh;
 }
 
 @keyframes comingSection {
     0%{
         opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
     }
     100%{
         opacity: 1;
@@ -260,34 +262,25 @@ a{
 
 .project-cards{
     display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin-left: 2rem;
+    gap: 2rem;
 }
 
-.card-1{
-    width: 30%;
-}
-.card-2{
-    width: 30%;
-}
-
-.card-3{
-    width: 30%;
+.card{
+    background: linear-gradient(blue, orange, White);
+    border: 2px solid lightcyan;
+    border-radius: 2vw;
 }
 
-.card-4{
-    width: 45%;
+.card-size{
+    width: 29vw;
+    height: 60vh;
 }
-
- .card-text h1{
-    font-size: 1.5rem;
-} 
-
 
 .project-cards img{
-    width: 370px;
-}
+    width: 320px;
+} */
+
+
 
 /* .card-2-text{
     padding-left: 2rem;
@@ -301,6 +294,40 @@ a{
     font-family: "Poppins", sans-serif;
     position: relative;
     top: 1rem;
+}
+
+.certificates-heading{
+    display: flex;
+    justify-content: center;
+    /* margin-left: 50%; */
+    margin-top: 3rem;
+}
+
+.certificate-section{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.certi{
+    margin-left: 5rem;
+}
+
+.certi-1{
+    position: relative;
+    top: -11rem;
+}
+.certi-2{
+    position: relative;
+    top: -13rem;
+}
+.certi-3{
+    position: relative;
+    top: -5rem;
+}
+.certi-4{
+    position: relative;
+    top: -5rem;
 }
 
 

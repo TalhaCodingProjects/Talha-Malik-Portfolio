@@ -1,145 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talha's Portfolio</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link rel="shortcut icon" href="https://github.com/TalhaCodingProjects/Talha-Malik-Portfolio/blob/main/tahla.png?raw=true" type="image/x-icon">
+    <style>
+        /* Style for the loader */
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            z-index: 9999; /* Ensure it appears above other content */
+            display: none; /* Initially hidden */
+        }
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .text-primary{
+            position: relative;
+            right: -1rem;
+        }
+    </style>
 </head>
-
-<header>
-    <nav>
-        <div class="logo">Talha Malik</div>
-        <div class="hamburger-menu" id="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+<body>
+    <!-- Loader -->
+    <div class="page-loader">
+        <div class="loader">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div>Loading...</div>
         </div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    </div>
 
-<section id="hero" class="hero-section">
-    <div class="hero-content">
-        <div class="container">
-            <h1 contenteditable>I am Talha Malik</h1>
-            <p>I am a highly skilled and professional Frontend Web Developer with expertise in creating dynamic and
-                responsive websites using HTML, CSS, and JavaScript. With three years of extensive experience in Graphic
-                Designing, I possess a keen eye for aesthetics and user-friendly design. Additionally, I have
-                substantial experience in developing websites using WordPress, allowing me to deliver customized and
-                scalable web solutions</p>
-                <div class="hero-button">
-                    <button><a href="https://youtube.com/@talhatechandai" target="_blank">Watch our channel</a><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0 0 48 48">
-                        <path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"></path><path fill="#FFF" d="M20 31L20 17 32 24z"></path>
-                        </svg></button>
+    <header>
+        <nav>
+            <div class="logo">Talha Malik</div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="container">
+                <h1 contenteditable>I am Talha Malik</h1>
+                <p>I am a highly skilled and professional Frontend Web Developer with expertise in creating dynamic and
+                    responsive websites using HTML, CSS, and JavaScript. With three years of extensive experience in Graphic
+                    Designing, I possess a keen eye for aesthetics and user-friendly design. Additionally, I have
+                    substantial experience in developing websites using WordPress, allowing me to deliver customized and
+                    scalable web solutions</p>
+                    <div class="hero-button">
+                        <button><a href="https://youtube.com/@talhatechandai" target="_blank">Watch our channel</a><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0 0 48 48">
+                            <path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"></path><path fill="#FFF" d="M20 31L20 17 32 24z"></path>
+                            </svg></button>
+                    </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://raw.githubusercontent.com/TalhaCodingProjects/Personal-Portfolio-Page/main/Screenshot%202024-05-29%20131919.png"
+                alt="Hero Image">
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>Hello, friends. I am a dedicated Web Developer with expertise in both coding and WordPress. Over the past three
+            years, I have honed my skills in Graphic Design, creating logos, banners, and a wide range of other visual
+            elements. My commitment is to provide an exceptional experience, combining creativity with technical proficiency
+            to bring your vision to life. I pride myself on delivering professional, high-quality results that exceed
+            expectations. Whether you need a custom website or striking graphic designs, I am here to help. Let’s
+            collaborate to create something truly remarkable.
+        </p>
+    </section>
+    
+    
+    <section id="contact" class="contact-section">
+        <div class="contact-form-container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="emailAddress">Email Address:</label>
+                    <input type="text" id="emailAddress" name="emailAddress" value="talhamalik1122st@gmail.com" readonly>
                 </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="responseMessage"></p>
         </div>
-    </div>
-    <div class="hero-image">
-        <img src="https://raw.githubusercontent.com/TalhaCodingProjects/Personal-Portfolio-Page/main/Screenshot%202024-05-29%20131919.png"
-            alt="Hero Image">
-    </div>
-</section>
+    </section>
+    
+    <footer>
+        &copy; 2024 My Portfolio
+    </footer>
 
-<section id="about" class="about-section">
-    <h2>About Me</h2>
-    <p>Hello, friends. I am a dedicated Web Developer with expertise in both coding and WordPress. Over the past three
-        years, I have honed my skills in Graphic Design, creating logos, banners, and a wide range of other visual
-        elements. My commitment is to provide an exceptional experience, combining creativity with technical proficiency
-        to bring your vision to life. I pride myself on delivering professional, high-quality results that exceed
-        expectations. Whether you need a custom website or striking graphic designs, I am here to help. Let’s
-        collaborate to create something truly remarkable.
-    </p>
-</section>
+    <script>
+        // Show loader immediately when the page starts loading
+        document.addEventListener('DOMContentLoaded', function () {
+            var loader = document.querySelector('.page-loader');
+            loader.style.display = 'block'; // Show loader
 
-
-<div class="project-heading">
-    <h2>Projects</h2>
-</div>
-<section id="projects" class="projects-section">
-    <div class="project-cards">
-        <div class="card-1">
-            <div class="card-image">
-                <img src="https://github.com/TalhaCodingProjects/Talha-Malik-Portfolio/blob/main/Samsung.png?raw=true" alt="">
-            </div>
-             <div class="card-text">
-                <h1>Samsung Clone</h1>
-                <p>This clone is build using HTML and CSS only. A best and beautiful website for cloning.</p>
-            </div> 
-        </div>
-        <div class="card-2">
-            <div class="card-image">
-                <img src="https://github.com/TalhaCodingProjects/Talha-Malik-Portfolio/blob/main/Samsung.png?raw=true" alt="">
-            </div>
-             <div class="card-text">
-                <h1>Samsung Clone</h1>
-                <p>This clone is build using HTML and CSS only. A best and beautiful website for cloning. Guide is available on our Youtube channel.</p>
-            </div> 
-        </div>
-        <div class="card-3">
-            <div class="card-image">
-                <img src="https://github.com/TalhaCodingProjects/Talha-Malik-Portfolio/blob/main/Samsung.png?raw=true" alt="">
-            </div>
-             <div class="card-text">
-                <h1>Samsung Clone</h1>
-                <p>This clone is build using HTML and CSS only. A best and beautiful website for cloning. Guide is available on our Youtube channel.</p>
-            </div> 
-        </div>
-        <div class="card-4">
-            <div class="card-image">
-                <img src="https://github.com/TalhaCodingProjects/Talha-Malik-Portfolio/blob/main/Samsung.png?raw=true" alt="">
-            </div>
-             <div class="card-text">
-                <h1>Samsung Clone</h1>
-                <p>This clone is build using HTML and CSS only. A best and beautiful website for cloning. Guide is available on our Youtube channel.</p>
-            </div> 
-        </div>
-        
-        </div>
-    </div>
-</section>
-
-<div class="certificates-heading">
-    <h2>Certificates</h2>
-</div>
-<section id="certificate" class="certificate-section">
-    <div class="certificates">
-        <div class="certi-1"></div>
-        <div class="certi-1"></div>
-        <div class="certi-1"></div>
-        <div class="certi-1"></div>
-    </div>
-</section>
-
-<section id="contact" class="contact-section">
-    <div class="contact-form-container">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="emailAddress">Email Address:</label>
-                <input type="text" id="emailAddress" name="emailAddress" value="talhamalik1122st@gmail.com" readonly>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit">Send Message</button>
-        </form>
-        <p id="responseMessage"></p>
-    </div>
-</section>
-
-<footer>
-    &copy; 2024 My Portfolio
-</footer>
+            // Hide loader after some delay (you can adjust the delay as needed)
+            setTimeout(function () {
+                loader.style.display = 'none'; // Hide loader
+            }, 3000); // 2000 milliseconds = 2 seconds
+        });
+    </script>
+    <script src="/script.js"></script>
 </body>
-
 </html>
