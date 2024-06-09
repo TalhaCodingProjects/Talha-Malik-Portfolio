@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <style>
         /* Style for the loader */
@@ -14,10 +16,14 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
-            z-index: 9999; /* Ensure it appears above other content */
-            display: none; /* Initially hidden */
+            background-color: rgba(255, 255, 255, 0.7);
+            /* Semi-transparent white background */
+            z-index: 9999;
+            /* Ensure it appears above other content */
+            display: none;
+            /* Initially hidden */
         }
+
         .loader {
             position: absolute;
             top: 50%;
@@ -25,20 +31,37 @@
             transform: translate(-50%, -50%);
         }
 
-        .text-primary{
+        .spinner-grow {
+            gap: 3vw;
+        }
+
+        .btn{
+            width: 8vw;
+            font-size: 0.70vw;
             position: relative;
-            right: -1rem;
+            right: 0.10vw;
         }
     </style>
 </head>
+
 <body>
     <!-- Loader -->
     <div class="page-loader">
         <div class="loader">
-            <div class="spinner-border text-primary" role="status">
-                <span class="visually-hidden">Loading...</span>
+            <div class="spinner-grow text-primary" role="status">
             </div>
-            <div>Loading...</div>
+            <div class="spinner-grow text-secondary" role="status">
+            </div>
+            <div class="spinner-grow text-success" role="status">
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+            </div>
+            <div class="spinner-grow text-warning" role="status">
+            </div>
+            <div class="spinner-grow text-info" role="status">
+            </div>
+            <div class="spinner-grow text-dark" role="status">
+            </div>
         </div>
     </div>
 
@@ -58,21 +81,27 @@
             </ul>
         </nav>
     </header>
-    
+
     <section id="hero" class="hero-section">
         <div class="hero-content">
             <div class="container">
                 <h1 contenteditable>I am Talha Malik</h1>
                 <p>I am a highly skilled and professional Frontend Web Developer with expertise in creating dynamic and
-                    responsive websites using HTML, CSS, and JavaScript. With three years of extensive experience in Graphic
+                    responsive websites using HTML, CSS, and JavaScript. With three years of extensive experience in
+                    Graphic
                     Designing, I possess a keen eye for aesthetics and user-friendly design. Additionally, I have
                     substantial experience in developing websites using WordPress, allowing me to deliver customized and
                     scalable web solutions</p>
-                    <div class="hero-button">
-                        <button><a href="https://youtube.com/@talhatechandai" target="_blank">Watch our channel</a><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0 0 48 48">
-                            <path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"></path><path fill="#FFF" d="M20 31L20 17 32 24z"></path>
-                            </svg></button>
-                    </div>
+                <div class="hero-button">
+                    <button><a href="https://youtube.com/@talhatechandai" target="_blank">Watch our channel</a><svg
+                            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38"
+                            viewBox="0 0 48 48">
+                            <path fill="#FF3D00"
+                                d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z">
+                            </path>
+                            <path fill="#FFF" d="M20 31L20 17 32 24z"></path>
+                        </svg></button>
+                </div>
             </div>
         </div>
         <div class="hero-image">
@@ -80,26 +109,76 @@
                 alt="Hero Image">
         </div>
     </section>
-    
+
     <section id="about" class="about-section">
         <h2>About Me</h2>
-        <p>Hello, friends. I am a dedicated Web Developer with expertise in both coding and WordPress. Over the past three
+        <p>Hello, friends. I am a dedicated Web Developer with expertise in both coding and WordPress. Over the past
+            three
             years, I have honed my skills in Graphic Design, creating logos, banners, and a wide range of other visual
-            elements. My commitment is to provide an exceptional experience, combining creativity with technical proficiency
+            elements. My commitment is to provide an exceptional experience, combining creativity with technical
+            proficiency
             to bring your vision to life. I pride myself on delivering professional, high-quality results that exceed
             expectations. Whether you need a custom website or striking graphic designs, I am here to help. Let’s
             collaborate to create something truly remarkable.
+
         </p>
     </section>
-    
-    
+
+    <section id="project" class="project-section" style="display: flex; gap: 4vw; margin-left: 1vw;">
+        <div class="card" style="width: 18rem; ">
+            <img src="Samsung.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Samsung Clone</h5>
+                <p class="card-text">This is a clone of samsung website which is build using HTML CSS and jS. You can see it by clicking on the following button.</p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary"><a href="https://talhacodingprojects.github.io/Samsung-website-Project/" target="_blank">See Website</a></button>
+                    <button type="button" class="btn btn-dark"><a href="https://www.youtube.com/watch?v=aL9f09AV0o0&list=PLQhxTOuHnlqLF-TBmZ7ZUNoStyhVD1gsk&index=2" target="_blank">Watch Tutorial</a></button>
+                  </div>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; ">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Samsung Clone</h5>
+                <p class="card-text">This is a clone of samsung website which is build using HTML CSS and jS. You can see it by clicking on the following button.</p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary"><a href="https://talhacodingprojects.github.io/Samsung-website-Project/" target="_blank">See Website</a></button>
+                    <button type="button" class="btn btn-dark"><a href="https://www.youtube.com/watch?v=aL9f09AV0o0&list=PLQhxTOuHnlqLF-TBmZ7ZUNoStyhVD1gsk&index=2" target="_blank">Watch Tutorial</a></button>
+                  </div>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; ">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Samsung Clone</h5>
+                <p class="card-text">This is a clone of samsung website which is build using HTML CSS and jS. You can see it by clicking on the following button.</p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary"><a href="https://talhacodingprojects.github.io/Samsung-website-Project/" target="_blank">See Website</a></button>
+                    <button type="button" class="btn btn-dark"><a href="https://www.youtube.com/watch?v=aL9f09AV0o0&list=PLQhxTOuHnlqLF-TBmZ7ZUNoStyhVD1gsk&index=2" target="_blank">Watch Tutorial</a></button>
+                  </div>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; ">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Samsung Clone</h5>
+                <p class="card-text">This is a clone of samsung website which is build using HTML CSS and jS. You can see it by clicking on the following button.</p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary"><a href="https://talhacodingprojects.github.io/Samsung-website-Project/" target="_blank">See Website</a></button>
+                    <button type="button" class="btn btn-dark"><a href="https://www.youtube.com/watch?v=aL9f09AV0o0&list=PLQhxTOuHnlqLF-TBmZ7ZUNoStyhVD1gsk&index=2" target="_blank">Watch Tutorial</a></button>
+                  </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact-section">
         <div class="contact-form-container">
             <h2>Contact Us</h2>
             <form id="contactForm">
                 <div class="form-group">
                     <label for="emailAddress">Email Address:</label>
-                    <input type="text" id="emailAddress" name="emailAddress" value="talhamalik1122st@gmail.com" readonly>
+                    <input type="text" id="emailAddress" name="emailAddress" value="talhamalik1122st@gmail.com"
+                        readonly>
                 </div>
                 <div class="form-group">
                     <label for="message">Message:</label>
@@ -110,7 +189,7 @@
             <p id="responseMessage"></p>
         </div>
     </section>
-    
+
     <footer>
         &copy; 2024 My Portfolio
     </footer>
@@ -129,4 +208,5 @@
     </script>
     <script src="/script.js"></script>
 </body>
+
 </html>
